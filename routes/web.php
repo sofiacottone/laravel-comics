@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
+    $navLinks = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
 
     $data = [
         'comics' => $comics,
+        'navLinks' => $navLinks,
     ];
     return view('home', $data);
 })->name('home');
