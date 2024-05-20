@@ -13,7 +13,7 @@
                   <!-- navbar links -->
                   <div class="navbar-nav text-uppercase ms-auto gap-3">
                     @foreach ($navLinks as $navLink)
-                    <a class="nav-link d-flex align-items-center" href="#">{{ $navLink }}</a>
+                    <a class="nav-link d-flex align-items-center" href="/{{ $navLink }}">{{ $navLink }}</a>
                     @endforeach
                   </div>
               </div>
