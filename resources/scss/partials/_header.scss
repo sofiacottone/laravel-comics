@@ -10,7 +10,7 @@
             font-weight: bold;
             border-bottom: 4px solid transparent;
             position: relative;
-            height: 130px;
+            min-height: 130px;
 
             &.active {
                 color: $primary-color;
