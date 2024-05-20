@@ -8,12 +8,16 @@
     <title>@yield('page-title')</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     @vite('resources/js/app.js')
 
 </head>
 <body>
-    @yield('content')
+    @include('partials.header')
+
+    <main>
+        @yield('content')
+    </main>
 </body>
