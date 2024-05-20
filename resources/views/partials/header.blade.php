@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary pb-0">
         <div class="container-fluid">
           <div class="container">
-            <div class="hstack justify-content-between">
+            <div class="hstack justify-content-between gap-3">
               <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Logo">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
