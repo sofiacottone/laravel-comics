@@ -23,3 +23,14 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get('/comics', function () {
+    $comics = config('comics');
+    $navLinks = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
+
+    $data = [
+        'comics' => $comics,
+        'navLinks' => $navLinks,
+    ];
+    return view('comics', $data);
+})->name('comics');
