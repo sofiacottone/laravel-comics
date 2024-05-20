@@ -35,22 +35,8 @@ Comics
             </div>
         </div>
         @endforeach
-
-
-        {{-- @foreach($comics as $comic)
-        <div class="col mb-3">
-            <div class="card">
-                <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $comic['title'] }}</h5>
-                    <div><span class="fw-bold">Series: </span>{{ $comic['series'] }}</div>
-                    <div><span class="fw-bold">Sale date: </span>{{ $comic['sale_date'] }}</div>
-                    <div><span class="fw-bold">Type: </span>{{ $comic['type'] }}</div>
-                    <p class="card-text">{{ $comic['description'] }}</p>
-                </div>
-            </div>
-        </div>
-        @endforeach --}}
     </div>
 </div>
 @endsection
+
+@include('partials.footer')
