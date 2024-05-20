@@ -5,3 +5,4 @@ Laravel Comics
 @endsection
 
 @include('partials.main')
+@include('partials.footer')
