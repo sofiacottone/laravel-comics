@@ -1,0 +1,41 @@
+@use './variables' as *;
+
+.navbar {
+    min-height: 8.125rem;
+
+    .navbar-nav {
+
+        .nav-link {
+            color: #464646;
+            font-weight: bold;
+            border-bottom: 4px solid transparent;
+            position: relative;
+            height: 130px;
+
+            &.active {
+                color: $primary-color;
+                border-bottom: 4px solid $primary-color;
+            }
+        }
+    }
+}
+
+// responsive 
+@media screen and (max-width: 991px) {
+    .navbar {
+
+        .navbar-nav {
+            margin-top: 10px;
+
+            .nav-link {
+                height: 50px;
+            }
+        }
+
+        .navbar {
+            img {
+                margin-block: 10px
+            }
+        }
+    }
+}
