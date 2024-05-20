@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+.ms-bg-container {
+    min-height: 360px;
+    width: 100%;
+    background-image: url(../img/footer-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .ms-logo-container {
+        background-image: url(../img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    li {
+        a {
+            color: #5d5d5d;
+            cursor: pointer;
+        }
+    }
+}
+
+
+#contacts {
+    background-color: #303030;
+
+    button {
+        background: transparent;
+        border: 2px solid $primary-color;
+    }
+
+    h5 {
+        color: $primary-color;
+    }
+}
