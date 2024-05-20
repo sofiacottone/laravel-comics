@@ -51,7 +51,40 @@ section {
     }
 }
 
+#pages {
+    background-color: $primary-color;
+    height: 160px;
+
+    ul {
+
+        .ms-img-container {
+            display: inline-block;
+            width: 60px;
+
+            img {
+                object-fit: contain;
+                aspect-ratio: 3/2;
+            }
+        }
+    }
+}
+
 // responsive 
+@media screen and (max-width: 1199px) {
+    #pages {
+        ul {
+            li {
+                flex-direction: column;
+                text-align: center;
+
+                .ms-img-container {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 966px) {
     .ms-single-card {
         .ms-img-wrapper {
