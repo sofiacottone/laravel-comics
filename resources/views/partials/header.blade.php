@@ -3,7 +3,7 @@
         <div class="container-fluid">
           <div class="container">
             <div class="hstack justify-content-between gap-3">
-              <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Logo">
+              <a href="/"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                   aria-label="Toggle navigation">
